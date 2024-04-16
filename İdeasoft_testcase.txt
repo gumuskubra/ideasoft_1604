@@ -99,7 +99,7 @@ Beklenen Sonuç:İnput alanlarının altında aşağıdaki uyarıların verildi�
 "Soyadı en az 2 karakter olmalıdır."
 "Adres en az 5 karakter olmalıdır.
 
-Test Case 6:   Sınır değerleri kontrolü: Adres İsmi, Adı,Soyadı ve Adres alanlarına sınır değerlerinde metin girilmesi durumu
+Test Case 7:   Sınır değerleri kontrolü: Adres İsmi, Adı,Soyadı ve Adres alanlarına sınır değerlerinde metin girilmesi durumu
 Amaç: Kullanıcı input alanına sınır değerinde metin girdiğinde adres ekleyebilmelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -114,7 +114,7 @@ Adı ve soyadı alanına 2 karakterli metin girilir.
 Beklenen Sonuç: Başarılı bir şekilde Adres eklendiği görülür.
 
 
-Test Case 7: Geçersiz Telefon Numarası:Telefon numarası alanına geçersiz bir telefon numarası girilmesi.
+Test Case 8: Geçersiz Telefon Numarası:Telefon numarası alanına geçersiz bir telefon numarası girilmesi.
 Amaç:Ülke alanına geçersiz bir ülke adı veya telefon numarası alanına geçersiz bir telefon numarası girildiğinde Adres ekleyememelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -128,7 +128,7 @@ Geçersiz telefon numarası girilir.
 Yeni Adresin eklenemediği görülür.
 Beklenen Sonuç: Kaydet butonuna basıldığında "Geçerli bir Cep Telefonu giriniz." uyarısının verildiği görülür.
 
-Test Case 7: Ülke-şehir-ilçe kontrolleri:Ülke alanına manuel giriş yapılamadığının ve ülke-şehir-ilçe kombinasyonlarının doğruluğunun kontrolü.
+Test Case 9: Ülke-şehir-ilçe kontrolleri:Ülke alanına manuel giriş yapılamadığının ve ülke-şehir-ilçe kombinasyonlarının doğruluğunun kontrolü.
 Amaç:Ülke-şehir-ilçe seçimi yapılırken ülke seçilmeden şehir ;şehir seçilmeden ilçe seçimi yapılamamalıdır ve manuel girişe izin verilmemelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -141,7 +141,7 @@ Adımlar:
 Beklenen sonuç: Şehir listesinin desable görünümünün açılması ve seçim yapılması ilçe listesinini disable olması ve manuel giriş yapılamaması.
 
 
-Test Case 8: Yetkisiz Erişim: Oturum açmamış veya yetkisiz bir kullanıcının adres eklemeye çalışması.
+Test Case 10: Yetkisiz Erişim: Oturum açmamış veya yetkisiz bir kullanıcının adres eklemeye çalışması.
 Amaç: Kullanıcı hesabı olmadan adres ekleyememelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -155,11 +155,11 @@ Beklenen Sonuç: Hesap açma sayfasına yönlendirilmesi gerekmektedir.
 
 .
 
-Test Case 9: Bağlantı Sorunları: Sunucuyla veya veritabanıyla bağlantı sorunları nedeniyle adres eklemenin başarısız olması
+Test Case 11: Bağlantı Sorunları: Sunucuyla veya veritabanıyla bağlantı sorunları nedeniyle adres eklemenin başarısız olması
 
 
 
-Test Case 10 :Adres Ekleme İşleminin İptal Edilmesi: Adres eklerken kullanıcı tarafından işlem iptal edilirse bu durum test edilmelidir.
+Test Case 12 :Adres Ekleme İşleminin İptal Edilmesi: Adres eklerken kullanıcı tarafından işlem iptal edilirse bu durum test edilmelidir.
 
 Amaç: Kullanıcı Adres eklerken işlemi İptal ederse Adres eklenmemelidir.
 
@@ -177,7 +177,7 @@ Beklenen Sonuç: Kaydet butonuna basılmadığında Yeni Adresin eklenemediği g
 
 
 
-Test Case 10: Adres Güncelleme
+Test Case 13: Adres Güncelleme
 Amaç: Kullanıcı mevcut bir adresi güncelleyebilmelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -192,7 +192,7 @@ Adres defterinde güncellenmiş adresin listelendiğini doğrula.
 Beklenen Sonuç: Adres başarıyla güncellendiğinde, adres defterinde güncellenmiş adresin görünmesi beklenir.
 
 
-Test Case 11: Adres Güncelleme zorunlu alan uyarıları
+Test Case 14: Adres Güncelleme zorunlu alan uyarıları
 Amaç: Kullanıcı mevcut bir adresi güncelleyebilmelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -206,7 +206,7 @@ Adres bilgilerini zorunlu input alanları boş olacak şekilde güncelle.
  Beklenen sonuç: Zorunlu alan uyarılarının verildiğinin görülmesi beklenir.
 
 
-Test Case 12: Adres Güncelleme sınır değer uyarıları
+Test Case 15: Adres Güncelleme sınır değer uyarıları
 Amaç: Kullanıcı mevcut bir adresi güncelleyebilmelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -221,7 +221,7 @@ Adres bilgilerine minimum ve maximum değerler gir ve güncelle.
 
 
 
-Test Case 13: Adres Silme
+Test Case 16: Adres Silme
 Amaç: Kullanıcı mevcut bir adresi silebilmelidir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -235,7 +235,7 @@ Adres defterinde silinen adresin listelenmediğini doğrula.
 Beklenen Sonuç: Adres başarıyla silindiğinde, adres defterinde silinen adresin artık listelenmediğini doğrula.
 
 
-Test Case 14: Tek adres silinmek istendiğinde uyarı verme kontrolü
+Test Case 17: Tek adres silinmek istendiğinde uyarı verme kontrolü
 Amaç: Kullanıcının en az bir adresi olmalıdır.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -252,7 +252,7 @@ En az bir adet 'Teslimat' tipi adres bulunmalıdır.
 
 
 
-Test Case 15: Fatura türü alan kontrolü
+Test Case 18: Fatura türü alan kontrolü
 Amaç: Adres tipi "Fatura" olduğunda Fatura türü alanı çıkmalıdır.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -265,7 +265,7 @@ Adres türü Fatura seçilir.
 Beklenen sonuç: Pop-up'ın aşağısında Fatura türü ve Bireysel ve Kurumsal seçeneklerinin çıktığı görülür.
 
 
-Test Case 15: Kurumsal Fatura türü zorunlu alan uyarıları kontrolü
+Test Case 19: Kurumsal Fatura türü zorunlu alan uyarıları kontrolü
 Amaç: Adres tipi Kurumsal Fatura türü zorunlu alan uyarıları kontrolü uyarıları çıkmalıdır.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -282,7 +282,7 @@ Beklenen sonuç:Aşağıdaki uyarıların verildiği görülür.
 Lütfen Vergi No giriniz.
 Lütfen Vergi Dairesi giriniz.
 
-Test Case 16: Geçersiz vergi no kontrolü
+Test Case 20: Geçersiz vergi no kontrolü
 Amaç: Geçersiz vergi no girildiğinde uyarı vermesi gerekmektedir.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
@@ -297,7 +297,7 @@ Vergi no alanına geçersiz değer girilir
 Kaydete basılır.
 Beklenen sonuç:Geçerli bir Vergi No giriniz
 
-Test Case 17: e-fatura kullanımı seçimi kontrolü
+Test Case 21: e-fatura kullanımı seçimi kontrolü
 
 Amaç:e-fatura kullanımı seçimi yapılabilmelidir.
 
@@ -315,7 +315,7 @@ Kaydete basılır.
 Beklenen sonuç:Başarılı bir şekilde kaydedildiği görülür.
 
 
-Test Case 18: Daha önce girilen bilgilerle yeni bir adres ekleme kontrolü
+Test Case 22: Daha önce girilen bilgilerle yeni bir adres ekleme kontrolü
 Amaç: Daha önce girilen bilgiler ile input alanından seçim yapıldığında diğer alanlarda otomatik dolup editlenebilmelidir.
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
 
@@ -325,7 +325,7 @@ Adımlar:
 Adres ekle butonuna tıklanır.
 Adı-soyadı-Telefon-Adres bilgileri input alanlarına gelip daha önce doldurulan data seçilir.
 
-Beklenen sonuç:Başarılı bir şekildediğer alanların otomatik dolduğu görülür.
+Beklenen sonuç:Başarılı bir şekilde diğer alanların otomatik dolduğu görülür.
 
 
 
