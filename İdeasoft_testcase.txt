@@ -1,0 +1,159 @@
+Test Case 1: Yeni Adres Ekleme
+Amaç: Kullanıcı yeni bir adres ekleyebilmelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Gerekli alanları doldur: Ad, Soyad, Adres, Şehir, Posta Kodu, Ülke, Telefon numarası.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Adres defterinde yeni eklenen adresin listelendiğini doğrula.
+Beklenen Sonuç: Yeni adres başarıyla eklendiğinde, adres defterinde yeni adresin görünmesi beklenir.
+
+Test Case 2: Yeni Adres Ekleme zorunlu alan kontrolleri
+Amaç: Kullanıcı zorunlu alanları doldurmadan Adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Gerekli alanları boş bırak: Ad, Soyad, Adres, Şehir, TC Kimlik, Ülke, Telefon numarası.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç: Kaydet butonuna basıldığında input alanlarında zorunlu alan uyarılarının verildiği görülür.
+
+
+
+Test Case 3: Zorunlu Alanların Eksik Girilmesi: Ad, soyad, adres, şehir, posta kodu gibi zorunlu alanların hiçbirinin veya birkaçının eksik girilmesi durumu.
+Amaç: Kullanıcı zorunlu alanları doldurmadan Adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Gerekli alanları eksik bırak: Ad, Soyad, Adres, Şehir, TC Kimlik, Ülke, Telefon numarası.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç: Kaydet butonuna basıldığında eksik girilen input alanlarında zorunlu alan uyarılarının verildiği görülür.
+
+
+
+Test Case 4: Geçersiz Veri Girişi: Adres veya posta kodu gibi alanlara geçersiz karakterlerin veya format dışı verilerin girilmesi.
+Amaç: Kullanıcı geçersiz veri girişiyle Adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Gerekli alanlara geçersiz veriler girilir(TC 11 haneden küçük,harf vb girilmesi): Ad, Soyad, Adres, Şehir, TC Kimlik, Ülke, Telefon numarası.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç: Kaydet butonuna basıldığında "Geçerli bir T.C Kimlik No giriniz" uyarılarının verildiği görülür.
+
+
+
+Test Case 5: Adresin Uzunluğu Sınırının Aşılması: Adres, şehir veya diğer alanlara çok uzun bir metin girilmesi ve sınırın aşılması durumu.
+Amaç: Kullanıcı Adres alanına uzun metin girdiğinde Adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Adres alanına uzun metin girilir.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç:"Adres en fazla 300 karakter olmalıdır."uyarısı verildiği görülür.
+
+
+
+Test Case 6: Geçersiz Ülke veya Telefon Numarası: Ülke alanına geçersiz bir ülke adı veya telefon numarası alanına geçersiz bir telefon numarası girilmesi.
+Amaç:Ülke alanına geçersiz bir ülke adı veya telefon numarası alanına geçersiz bir telefon numarası girildiğinde Adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Geçersiz telefon numarası girilir.
+"Kaydet" veya "Adresi Ekle" butonuna tıkla.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç: Kaydet butonuna basıldığında "Geçerli bir Cep Telefonu giriniz." uyarısının verildiği görülür.
+
+
+
+
+
+Test Case 7: Yetkisiz Erişim: Oturum açmamış veya yetkisiz bir kullanıcının adres eklemeye çalışması.
+Amaç: Kullanıcı hesabı olmadan adres ekleyememelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıklanır.
+Adres ekleme sayfasının linki alınır.
+Gizli sekme veya başka bir tarayıcı adres alanına bu url yapıştırılır.
+Beklenen Sonuç: Hesap açma sayfasına yönlendirilmesi gerekmektedir.
+
+.
+
+Test Case 8: Bağlantı Sorunları: Sunucuyla veya veritabanıyla bağlantı sorunları nedeniyle adres eklemenin başarısız olması
+
+
+
+
+Test Case 9:Adres Ekleme İşleminin İptal Edilmesi: Adres eklerken kullanıcı tarafından işlem iptal edilirse bu durum test edilmelidir.
+
+Amaç: Kullanıcı Adres eklerken işlemi İptal ederse Adres eklenmemelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+"Yeni Adres Ekle" butonuna tıkla
+Gerekli alanları boş bırak: Ad, Soyad, Adres, Şehir, Posta Kodu, Ülke, Telefon numarası.
+İptal butonuna tıklanır.
+Yeni Adresin eklenemediği görülür.
+Beklenen Sonuç: Kaydet butonuna basılmadığında Yeni Adresin eklenemediği görülür.
+
+
+
+
+Test Case 3: Adres Güncelleme
+Amaç: Kullanıcı mevcut bir adresi güncelleyebilmelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Güncellenmek istenen adresin yanındaki "Düzenle" butonuna tıkla
+Adres bilgilerini güncelle.
+"Kaydet" veya "Güncelle" butonuna tıkla.
+Adres defterinde güncellenmiş adresin listelendiğini doğrula.
+Beklenen Sonuç: Adres başarıyla güncellendiğinde, adres defterinde güncellenmiş adresin görünmesi beklenir.
+
+Test Case 4: Adres Silme
+Amaç: Kullanıcı mevcut bir adresi silebilmelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Silinmek istenen adresin yanındaki "Sil" butonuna tıkla
+Silme işlemini onayla.
+Adres defterinde silinen adresin listelenmediğini doğrula.
+Beklenen Sonuç: Adres başarıyla silindiğinde, adres defterinde silinen adresin artık listelenmediğini doğrula.
