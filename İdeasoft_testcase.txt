@@ -236,7 +236,7 @@ Beklenen Sonuç: Adres başarıyla silindiğinde, adres defterinde silinen adres
 
 
 Test Case 14: Tek adres silinmek istendiğinde uyarı verme kontrolü
-Amaç: Kullanıcı mevcut bir adresi silebilmelidir.
+Amaç: Kullanıcının en az bir adresi olmalıdır.
 
 Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
 
@@ -246,6 +246,73 @@ Adımlar:
 Silinmek istenen adresin yanındaki "Sil" butonuna tıkla
 Silme işlemini onayla.
 
-Beklenen Sonuç: aşağıdaki uyarıların verildiği görülür.
+Beklenen Sonuç: Aşağıdaki uyarıların verildiği görülür.
 "En az bir adet 'Fatura' tipi adres bulunmalıdır."
 En az bir adet 'Teslimat' tipi adres bulunmalıdır.
+
+
+
+Test Case 15: Fatura türü alan kontrolü
+Amaç: Adres tipi "Fatura" olduğunda Fatura türü alanı çıkmalıdır.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Adres ekle butonuna tıklanır.
+Adres türü Fatura seçilir.
+Beklenen sonuç: Pop-up'ın aşağısında Fatura türü ve Bireysel ve Kurumsal seçeneklerinin çıktığı görülür.
+
+
+Test Case 15: Kurumsal Fatura türü zorunlu alan uyarıları kontrolü
+Amaç: Adres tipi Kurumsal Fatura türü zorunlu alan uyarıları kontrolü uyarıları çıkmalıdır.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Adres ekle butonuna tıklanır.
+Adres türü Fatura seçilir.
+Fatura türü Kurumsal Seçilir.
+Vergi no ve Vergi dairesi alanları boş bırakılır.
+Kaydete basılır.
+Beklenen sonuç:Aşağıdaki uyarıların verildiği görülür.
+Lütfen Vergi No giriniz.
+Lütfen Vergi Dairesi giriniz.
+
+Test Case 16: Geçersiz vergi no kontrolü
+Amaç: Geçersiz vergi no girildiğinde uyarı vermesi gerekmektedir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Adres ekle butonuna tıklanır.
+Adres türü Fatura seçilir.
+Fatura türü Kurumsal Seçilir.
+Vergi no alanına geçersiz değer girilir
+Kaydete basılır.
+Beklenen sonuç:Geçerli bir Vergi No giriniz
+
+Test Case 17: e-fatura kullanımı seçimi kontrolü
+
+Amaç:e-fatura kullanımı seçimi yapılabilmelidir.
+
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Adres ekle butonuna tıklanır.
+Adres türü Fatura seçilir.
+Fatura türü Kurumsal Seçilir.
+Vergi no ve Vergi dairesi alanları doldurulur
+E-Fatura Kullanımı seçeneği işaretlenir
+Kaydete basılır.
+Beklenen sonuç:Başarılı bir şekilde kaydedildiği görülür.
+
+
+                
