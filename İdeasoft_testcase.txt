@@ -315,4 +315,18 @@ Kaydete basılır.
 Beklenen sonuç:Başarılı bir şekilde kaydedildiği görülür.
 
 
+Test Case 18: Daha önce girilen bilgilerle yeni bir adres ekleme kontrolü
+Amaç: Daha önce girilen bilgiler ile input alanından seçim yapıldığında diğer alanlarda otomatik dolup editlenebilmelidir.
+Önkoşullar: Kullanıcı bir hesaba sahip olmalı ve "Hesabım" sayfasına giriş yapmalıdır.
+
+Adımlar:
+
+"Hesabım" sayfasında bulunan "Adres Defteri" sekmesine tıkla.
+Adres ekle butonuna tıklanır.
+Adı-soyadı-Telefon-Adres bilgileri input alanlarına gelip daha önce doldurulan data seçilir.
+
+Beklenen sonuç:Başarılı bir şekildediğer alanların otomatik dolduğu görülür.
+
+
+
                 
