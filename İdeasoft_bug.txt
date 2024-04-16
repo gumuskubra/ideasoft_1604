@@ -1,0 +1,48 @@
+Hata Başlığı:Adres düzenlemede telefon numaraları formata uygun olmadan düzenlenebiliyor.
+Hata Tanımı: Adres düzenleme işleminde telefon numaraları formata uygun olmadan düzenlendiğinde Kaydet işlemi hata vermeden çalışıyor.
+Hata Adımları:
+1.Kullanıcı adı ve şifre ile sisteme giriş yapılır.
+2.Hesabım ve Adres Defteri adımları takip edilir.
+3.Var olan adresler için düzenle butonuna tıklanır.
+4.Telefon alanına format dışı bilgiler girilir.(örnek:4444444444444444444)
+5.Kaydet butonuna basılır.
+6.Başarılı bir şekilde telefon numarasının kaydedildiği görülür.
+Beklenen sonuç: "Geçerli bir Telefon giriniz." uyarısının verilmesi 
+Hata önemi:Kritik
+
+Hata Başlığı:Ülke KKTC seçildiğinde İlçe alanının zorunlu görünmesi
+Hata Tanımı: Ülke seçimlerindeotoatil İl ve İlçe seçimi yapılırken KKTC seçiminde İlçe alanına manuel giriş yapılmasına izin verilmemelidir.
+Hata Adımları:
+1.Kullanıcı adı ve şifre ile sisteme giriş yapılır.
+2.Hesabım ve Adres Defteri adımları takip edilir.
+3.Adres ekle butonuna tıklanır.
+4.Ülke-KKTC ve şehir seçimi yapılır.
+5.İlçe alanına manuel giriş yapılıp kaydedilir.
+Beklenen Sonuç: ilçe alanına giriş yapılmasına izin verilmemelidir.
+Hata Önemi: Orta
+
+
+Hata Başlığı:Ülke zorunlu alan uyarısı düzenlenmelidir.
+Hata Tanımı:" Lütfen Ülke seçinm. " uyarısındaki harf hatası düzeltilmelidir.
+Hata Adımları:
+1.Kullanıcı adı ve şifre ile sisteme giriş yapılır.
+2.Hesabım ve Adres Defteri adımları takip edilir.
+3.Adres ekle butonuna tıklanır.
+4.Ülke seçimi yapılmaz.
+5.Kaydete basılır.
+6." Lütfen Ülke seçinm. " uyarısı çıktığı görülür.
+Beklenen Sonuç:" Lütfen Ülke seçin. " uyarısı çıkmalıdır.
+Hata Önemi: Low
+
+Hata Başlığı:Adres eklemede telefon numaraları formata uygun olmadan eklenebiliyor.
+Hata Tanımı: Adres ekleme işleminde telefon numaraları formata uygun olmadan manuel bir şekilde girildiğinde Kaydetme işlemi hata vermeden çalışıyor.
+Hata Adımları:
+1.Kullanıcı adı ve şifre ile sisteme giriş yapılır.
+2.Hesabım ve Adres Defteri adımları takip edilir.
+3.Var olan adresler için düzenle butonuna tıklanır.
+4.Telefon alanına format dışı bilgiler girilir.(örnek:+909995657474)
+5.Kaydet butonuna basılır.
+6.Başarılı bir şekilde telefon numarasının kaydedildiği görülür.
+Beklenen sonuç: "Geçerli bir Telefon giriniz." uyarısının verilmesi 
+Hata önemi:Kritik
+
